@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="1212.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormularioController">
+   <children>
+      <Label fx:id="lblTipo" layoutX="15.0" layoutY="67.0" prefHeight="30.0" prefWidth="159.0" text="Tipo" />
+      <Label fx:id="lblId" layoutX="15.0" layoutY="118.0" prefHeight="30.0" prefWidth="159.0" text="ID" />
+      <Label fx:id="lblNombre" layoutX="15.0" layoutY="169.0" prefHeight="30.0" prefWidth="159.0" text="Nombre" />
+      <Label fx:id="lblFecha" layoutX="15.0" layoutY="217.0" prefHeight="30.0" prefWidth="159.0" text="Fecha nacimiento" />
+      <TextField fx:id="txtNombre" layoutX="147.0" layoutY="171.0" />
+      <TextField fx:id="txtId" layoutX="147.0" layoutY="120.0" />
+      <ListView fx:id="listViewDatos" layoutX="335.0" layoutY="70.0" prefHeight="324.0" prefWidth="835.0" />
+      <ChoiceBox fx:id="cbTipo" layoutX="147.0" layoutY="70.0" prefWidth="150.0" />
+      <Label fx:id="lblDato1" layoutX="15.0" layoutY="265.0" prefHeight="30.0" prefWidth="159.0" text="datoExtra1" />
+      <Label fx:id="lblDato2" layoutX="15.0" layoutY="313.0" prefHeight="30.0" prefWidth="159.0" text="datoExtra2" />
+      <TextField fx:id="txtDato1" layoutX="147.0" layoutY="267.0" />
+      <Button fx:id="btnAgregar" layoutX="17.0" layoutY="437.0" mnemonicParsing="false" onAction="#agregar" prefHeight="26.0" prefWidth="100.0" text="Agregar" />
+      <Button fx:id="btnEliminar" layoutX="245.0" layoutY="437.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="26.0" prefWidth="100.0" text="Eliminar" />
+      <Button fx:id="btnModificar" layoutX="132.0" layoutY="437.0" mnemonicParsing="false" onAction="#modificar" prefHeight="26.0" prefWidth="100.0" text="Modificar" />
+      <ChoiceBox fx:id="cbOrden" layoutX="1002.0" layoutY="29.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePicker" layoutX="147.0" layoutY="219.0" prefHeight="26.0" prefWidth="150.0" />
+      <RadioButton fx:id="btnA" layoutX="854.0" layoutY="33.0" mnemonicParsing="false" text="A -&gt; Z" />
+      <RadioButton fx:id="btnZ" layoutX="928.0" layoutY="33.0" mnemonicParsing="false" text="Z -&gt; A" />
+      <RadioButton fx:id="btnSi" layoutX="162.0" layoutY="319.0" mnemonicParsing="false" text="SI" />
+      <RadioButton fx:id="btnNo" layoutX="236.0" layoutY="319.0" mnemonicParsing="false" text="NO" />
+      <Button fx:id="btnExportar" layoutX="1056.0" layoutY="438.0" mnemonicParsing="false" onAction="#exportarTxt" prefHeight="26.0" prefWidth="100.0" text="Exportar" />
+      <Label fx:id="lblEstado" layoutX="15.0" layoutY="351.0" prefHeight="30.0" prefWidth="159.0" text="Activo" />
+      <RadioButton fx:id="btnSi2" layoutX="162.0" layoutY="357.0" mnemonicParsing="false" text="SI" />
+      <RadioButton fx:id="btnNo2" layoutX="236.0" layoutY="357.0" mnemonicParsing="false" text="NO" />
+      <ChoiceBox fx:id="cbAnimalTipo" layoutX="420.0" layoutY="30.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="cbEstado" layoutX="586.0" layoutY="30.0" prefWidth="150.0" />
+      <Button fx:id="btnAplicar" layoutX="828.0" layoutY="438.0" mnemonicParsing="false" onAction="#exportarTxt" prefHeight="26.0" prefWidth="100.0" text="Aplicar filtros" />
+      <Button fx:id="btnLimpiar" layoutX="943.0" layoutY="438.0" mnemonicParsing="false" onAction="#exportarTxt" prefHeight="26.0" prefWidth="100.0" text="Limpiar filtros" />
+      <Label fx:id="lblFiltrarx" layoutX="351.0" layoutY="27.0" prefHeight="30.0" prefWidth="159.0" text="Filtrar por" />
+   </children>
+</AnchorPane>
